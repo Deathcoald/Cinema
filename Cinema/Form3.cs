@@ -12,6 +12,14 @@ namespace Cinema
 {
     public partial class Form3 : Form
     {
+        private Form2 parentForm;
+
+        public Form3(Form2 form2)
+        {
+            InitializeComponent();
+            parentForm = form2; 
+        }
+
         public Form3()
         {
             InitializeComponent();

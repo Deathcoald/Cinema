@@ -31,7 +31,7 @@ namespace Cinema
             }
         }
 
-        void create_seans_button(string time, ref int point_x, ref int point_y)
+        public void create_seans_button(string time, ref int point_x, ref int point_y)
         {
             Button seansButton = new Button
             {
