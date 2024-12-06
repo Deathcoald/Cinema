@@ -1,15 +1,19 @@
 ﻿using System;
+using System.Windows.Forms;
 
 namespace Cinema
 {
     class Zal
     {
-        public bool[,] small_hall { get; private set; }
         public bool[,] medium_hall { get; private set; }
-        public bool[,] large_hall { get; private set; }
+        public int rows { get; set; }
+        public int cols { get; set; }
 
-        public Zal()
+        public Zal(int Rows, int Cols)
         {
+            rows = Rows;
+            cols = Cols;
+
             GenerateMatrices();
         }
 
@@ -17,11 +21,8 @@ namespace Cinema
         {
             Random random = new Random();
 
-            small_hall = CreateRandomMatrix(10, 10, random); 
+            medium_hall = CreateRandomMatrix(rows, cols, random); 
 
-            medium_hall = CreateRandomMatrix(13, 13, random); 
-
-            large_hall = CreateRandomMatrix(20, 20, random); 
         }
 
         private bool[,] CreateRandomMatrix(int rows, int cols, Random random)

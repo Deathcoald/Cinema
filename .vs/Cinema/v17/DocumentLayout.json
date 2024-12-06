@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\c#\\Cinema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|D:\\c#\\Cinema\\cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|D:\\c#\\Cinema\\cinema\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\zal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\zal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|D:\\c#\\Cinema\\cinema\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|D:\\c#\\Cinema\\cinema\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -50,19 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "zal.cs",
+              "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\zal.cs",
+              "RelativeDocumentMoniker": "Cinema\\zal.cs",
+              "ToolTip": "D:\\c#\\Cinema\\Cinema\\zal.cs",
+              "RelativeToolTip": "Cinema\\zal.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwBcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T12:48:15.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Form3.Designer.cs",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form3.Designer.cs",
               "RelativeDocumentMoniker": "Cinema\\Form3.Designer.cs",
@@ -75,20 +84,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form3.cs",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form3.cs",
               "RelativeDocumentMoniker": "Cinema\\Form3.cs",
               "ToolTip": "D:\\c#\\Cinema\\Cinema\\Form3.cs",
               "RelativeToolTip": "Cinema\\Form3.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T20:13:56.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form3.cs",
               "RelativeDocumentMoniker": "Cinema\\Form3.cs",
@@ -100,19 +109,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form2.cs",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form2.cs",
               "RelativeDocumentMoniker": "Cinema\\Form2.cs",
               "ToolTip": "D:\\c#\\Cinema\\Cinema\\Form2.cs",
               "RelativeToolTip": "Cinema\\Form2.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAQwDoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAQwGEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T19:42:15.356Z"
+              "WhenOpened": "2024-12-05T19:42:15.356Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form1.cs",
               "RelativeDocumentMoniker": "Cinema\\Form1.cs",
@@ -123,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form1.cs",
               "RelativeDocumentMoniker": "Cinema\\Form1.cs",
@@ -135,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Form2.Designer.cs",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form2.Designer.cs",
               "RelativeDocumentMoniker": "Cinema\\Form2.Designer.cs",
@@ -143,22 +153,24 @@
               "RelativeToolTip": "Cinema\\Form2.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:11:55.375Z"
+              "WhenOpened": "2024-12-04T16:11:55.375Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form2.cs",
               "RelativeDocumentMoniker": "Cinema\\Form2.cs",
               "ToolTip": "D:\\c#\\Cinema\\Cinema\\Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Cinema\\Form2.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T14:30:20.273Z"
+              "WhenOpened": "2024-12-04T14:30:20.273Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "Cinema\\Form1.Designer.cs",
@@ -170,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Program.cs",
               "RelativeDocumentMoniker": "Cinema\\Program.cs",
