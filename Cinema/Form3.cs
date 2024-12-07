@@ -33,7 +33,7 @@ namespace Cinema
                 }
                 else
                 {
-                    Form4 form4 = new Form4();
+                    Form4 form4 = new Form4(seatRow, seatCol, zal, seatButton);  
                     form4.Show();
                 }
             };
@@ -41,12 +41,7 @@ namespace Cinema
             this.Controls.Add(seatButton);
         }
 
-        private void OnSeansButtonClick(object sender, EventArgs e, string time)
-        {
-            Form4 form4 = new Form4();
 
-            form4.Show();
-        }
         void create_scene()
         {
             int start_x = 20;
@@ -57,7 +52,8 @@ namespace Cinema
             {
                 for (int col = 0; col < zal.cols; col++)
                 {
-                    create_seat_button(row, col, start_x, start_y, zal.medium_hall[row, col]);
+                    bool isOccupied = zal.medium_hall[row, col];
+                    create_seat_button(row, col, start_x, start_y, isOccupied);
                     start_x += padding;
                 }
 
@@ -80,7 +76,22 @@ namespace Cinema
 
             this.Controls.Add(screenLabel);
         }
+        private Button GetSeatButton(int row, int col)
+        {
 
+            foreach (Control control in this.Controls)
+            {
+                if (control is Button seatButton)
+                {
+                    var (seatRow, seatCol) = ((int, int))seatButton.Tag;
+                    if (seatRow == row && seatCol == col)
+                    {
+                        return seatButton;
+                    }
+                }
+            }
+            return null;  
+        }
         public Form3()
         {
             InitializeComponent();

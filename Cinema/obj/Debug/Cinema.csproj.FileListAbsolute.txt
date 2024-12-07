@@ -19,3 +19,4 @@ D:\visual\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.cache
 D:\visual\Cinema\Cinema\obj\Debug\Cinema.csproj.CoreCompileInputs.cache
 D:\visual\Cinema\Cinema\obj\Debug\Cinema.exe
 D:\visual\Cinema\Cinema\obj\Debug\Cinema.pdb
+D:\c#\Cinema\Cinema\obj\Debug\Cinema.Form3.resources

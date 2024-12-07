@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace Cinema
 {
-    class Zal
+    public class Zal
     {
         public bool[,] medium_hall { get; private set; }
         public int rows { get; set; }
