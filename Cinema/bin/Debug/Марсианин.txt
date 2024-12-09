@@ -1,0 +1,6 @@
+Time: 10:30 - 12:00  
+FIO: Виталик, row: 4, col: 10
+FIO: Лера, row: 1, col: 6
+FIO: Даня, row: 0, col: 5
+Time: 14:30 - 16:00  
+FIO: Денис, row: 5, col: 8

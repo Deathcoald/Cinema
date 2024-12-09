@@ -9,6 +9,7 @@ namespace Cinema
     {
         private string selectedMovie;
 
+<<<<<<< Updated upstream
         public Form2(string movieName)
         {
             InitializeComponent();
@@ -18,6 +19,8 @@ namespace Cinema
             LoadSeansTimes();
         }
 
+=======
+>>>>>>> Stashed changes
         static string[] ReadFile(string filePath)
         {
             try
@@ -41,10 +44,13 @@ namespace Cinema
                 Font = new System.Drawing.Font("Times New Roman", 18),
                 ForeColor = System.Drawing.Color.Black,
                 BackColor = System.Drawing.Color.White,
-
                 TextAlign = ContentAlignment.MiddleCenter,
+                Tag = time  
             };
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
             
             seansButton.Click += (sender, e) => OnSeansButtonClick(sender, e, time);
 
@@ -52,15 +58,20 @@ namespace Cinema
             point_y += 60; 
         }
 
+<<<<<<< Updated upstream
         
+=======
+>>>>>>> Stashed changes
         private void OnSeansButtonClick(object sender, EventArgs e, string time)
         {
-            Form3 form3 = new Form3();
-
+            Form3 form3 = new Form3(time, selectedMovie);
             form3.Show();
         }
 
+<<<<<<< Updated upstream
         
+=======
+>>>>>>> Stashed changes
         private void LoadSeansTimes()
         {
             string[] seans_time = ReadFile("timetable.txt");
@@ -72,7 +83,10 @@ namespace Cinema
 
             foreach (string s in seans_time)
             {
+<<<<<<< Updated upstream
                 
+=======
+>>>>>>> Stashed changes
                 if (string.IsNullOrWhiteSpace(s))
                 {
                     isMovieSection = false; 
@@ -84,6 +98,7 @@ namespace Cinema
                     
                     Label cinema_name1 = new Label
                     {
+<<<<<<< Updated upstream
                             Text = s,
                             Size = new System.Drawing.Size(300, 80),
                             Location = new System.Drawing.Point(870, 0),
@@ -91,8 +106,18 @@ namespace Cinema
                             ForeColor = System.Drawing.Color.White,
 
                             TextAlign = ContentAlignment.MiddleCenter,
+=======
+                        Text = s,
+                        Size = new System.Drawing.Size(300, 80),
+                        Location = new System.Drawing.Point(870, point_y),  
+                        Font = new System.Drawing.Font("Times New Roman", 25),
+                        ForeColor = System.Drawing.Color.White,
+                        TextAlign = ContentAlignment.MiddleCenter,
+>>>>>>> Stashed changes
                     };
                     this.Controls.Add(cinema_name1);
+
+                    point_y += 80; 
 
                     continue;
                 }
@@ -101,9 +126,26 @@ namespace Cinema
                 {
                     string time = s;
                     create_seans_button(time, ref point_x, ref point_y);
+<<<<<<< Updated upstream
                     isMovieSection = true; 
                 }
             }
         }
+=======
+                }
+            }
+        }
+
+        public Form2(string movieName)
+        {
+            InitializeComponent();
+
+            selectedMovie = movieName;
+            this.Text = $"Сеансы для фильма: {selectedMovie}";
+
+            BaseFunc.create_close_button(this, 1820, 10);
+            LoadSeansTimes();
+        }
+>>>>>>> Stashed changes
     }
 }

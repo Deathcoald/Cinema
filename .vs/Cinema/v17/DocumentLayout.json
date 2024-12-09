@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "D:\\c#\\Cinema\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|D:\\c#\\Cinema\\cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|D:\\c#\\Cinema\\cinema\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,16 +50,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -75,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form3.cs",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form3.cs",
               "RelativeDocumentMoniker": "Cinema\\Form3.cs",
@@ -88,7 +80,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\c#\\Cinema\\Cinema\\Form3.cs",
               "RelativeDocumentMoniker": "Cinema\\Form3.cs",
