@@ -48,7 +48,7 @@ namespace Cinema
         void create_scene()
         {
             int start_x = 20;
-            int start_y = 20;
+            int start_y = 150;
             int padding = 30;
 
             for (int row = 0; row < zal.rows; row++)
@@ -70,7 +70,7 @@ namespace Cinema
             {
                 Text = "Экран",
                 Size = new Size(200, 30), 
-                Location = new Point(100, 570), 
+                Location = new Point(115, 10), 
                 BackColor = Color.Gray,
                 ForeColor = Color.White,
                 Font = new Font("Arial", 14, FontStyle.Bold),
@@ -99,7 +99,7 @@ namespace Cinema
         {
             this.selectedMovie = selectedMovie;
             this.Time = Time;
-            zal = new Zal(13, 13);
+            zal = new Zal(13, 13, $"{selectedMovie}.txt", Time);
 
             InitializeComponent();
             create_scene();

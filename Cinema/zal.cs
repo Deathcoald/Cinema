@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Windows.Forms;
+using System.Collections.Generic;
+using System.IO;
 
 namespace Cinema
 {
@@ -8,37 +9,58 @@ namespace Cinema
         public bool[,] medium_hall { get; private set; }
         public int rows { get; set; }
         public int cols { get; set; }
+        private string filterTime; 
 
-        public Zal(int Rows, int Cols)
+        public Zal(int Rows, int Cols, string filePath, string Time)
         {
             rows = Rows;
             cols = Cols;
-
-            GenerateMatrices();
+            filterTime = Time;  
+            GenerateMatrices(filePath);
         }
 
-        private void GenerateMatrices()
+        private void GenerateMatrices(string filePath)
         {
-            Random random = new Random();
-
-            medium_hall = CreateRandomMatrix(rows, cols, random); 
-
+            medium_hall = new bool[rows, cols];
+            FillMatrixFromFile(filePath);
         }
 
-        private bool[,] CreateRandomMatrix(int rows, int cols, Random random)
+        private void FillMatrixFromFile(string filePath)
         {
-            bool[,] matrix = new bool[rows, cols];
-
-            for (int i = 0; i < rows; i++)
+            if (!File.Exists(filePath))
             {
-                for (int j = 0; j < cols; j++)
-                {
-                    matrix[i, j] = random.Next(2) == 1;
-                }
+                Console.WriteLine("Файл не найден.");
+                return;
             }
 
-            return matrix;
-        }
+            var lines = File.ReadAllLines(filePath);
+            string currentTime = string.Empty;
 
+            foreach (var line in lines)
+            {
+                if (line.StartsWith("Time:"))
+                {
+                    currentTime = line;
+
+                    if (currentTime != $"Time: {filterTime}")
+                    {
+                        currentTime = string.Empty; 
+                    }
+                }
+                else if (line.StartsWith("FIO:") && currentTime == $"Time: {filterTime}")
+                {
+                    var parts = line.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+                    string fio = parts[1];
+                    int row = int.Parse(parts[3]) - 1;
+                    int col = int.Parse(parts[5]) - 1;
+
+                    if (row >= 0 && row < rows && col >= 0 && col < cols)
+                    {
+                        medium_hall[row, col] = true;  
+                    }
+                }
+            }
+        }
     }
 }

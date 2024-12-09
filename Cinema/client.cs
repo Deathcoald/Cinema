@@ -36,7 +36,7 @@ namespace Cinema
                 fileLines.Add($"Time: {this.Time}");
                 timeLineIndex = fileLines.Count - 1;
             }
-            fileLines.Insert(timeLineIndex + 1, $"FIO: {this.FIO}, row: {this.Row}, col: {this.Col}");
+            fileLines.Insert(timeLineIndex + 1, $"FIO: {this.FIO}, row: {this.Row + 1}, col: {this.Col + 1}");
 
             File.WriteAllLines(filePath, fileLines);
         }
