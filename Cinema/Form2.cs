@@ -8,8 +8,7 @@ namespace Cinema
     public partial class Form2 : Form
     {
         private string selectedMovie;
-
-        
+        private string Time;
 
         static string[] ReadFile(string filePath)
         {
@@ -48,7 +47,9 @@ namespace Cinema
 
         private void OnSeansButtonClick(object sender, EventArgs e, string time)
         {
-            Form3 form3 = new Form3();
+            Time = time;
+
+            Form3 form3 = new Form3(Time, selectedMovie);
 
             form3.Show();
         }
@@ -101,8 +102,9 @@ namespace Cinema
 
             public Form2(string movieName)
         {
-            InitializeComponent();
             selectedMovie = movieName;
+
+            InitializeComponent();         
             this.Text = $"Сеансы для фильма: {selectedMovie}";
             BaseFunc.create_close_button(this, 1820, 10);
             LoadSeansTimes();

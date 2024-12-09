@@ -10,15 +10,22 @@ namespace Cinema
         private int Col { get; set; }
 
         public Zal zal;
+
         private Button seatButton;
 
         private TextBox inputTextBox;
         private Button processButton;
 
-        public Form4(int row, int col, Zal zal, Button seatButton)
+        private string Time;
+        private string selectedMovie;
+
+        public Form4(string selectedMovie, string Time, int row, int col, Zal zal, Button seatButton)
         {
             Row = row;
             Col = col;
+
+            this.selectedMovie = selectedMovie;
+            this.Time = Time;
             this.zal = zal;
             this.seatButton = seatButton;  
 
@@ -52,9 +59,9 @@ namespace Cinema
 
         private void ProcessButton_Click(object sender, EventArgs e)
         {
-            Client client = new Client(inputTextBox.Text, Row, Col);
+            Client client = new Client(Time, inputTextBox.Text, Row, Col);
 
-            client.SaveToFile("Clients.txt");
+            client.SaveToFile($"{selectedMovie}.txt");
 
             
             seatButton.BackColor = Color.Red;  

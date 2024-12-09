@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Cinema
 {
@@ -8,31 +10,35 @@ namespace Cinema
         public string FIO { get; set; }
         public int Row { get; set; }
         public int Col { get; set; }
+        public string MovieName { get; set; }
+        public string Time { get; set; }
 
-        public Client(string fio, int row, int col)
+        public Client(string time, string fio, int row, int col)
         {
-            FIO = fio;  
-            Row = row;  
-            Col = col;  
+            FIO = fio;
+            Row = row;
+            Col = col;
+            Time = time;
         }
-        public void DisplayInfo()
-        {
-            Console.WriteLine($"ФИО: {FIO}, Ряд: {Row}, Место: {Col}");
-        }
+
         public void SaveToFile(string filePath)
         {
-            try
+            List<string> fileLines = new List<string>();
+
+            if (File.Exists(filePath))
             {
-                
-                using (StreamWriter writer = new StreamWriter(filePath, true)) 
-                {
-                    writer.WriteLine($"ФИО: {FIO}, Ряд: {Row}, Место: {Col}");
-                }
+                fileLines = File.ReadAllLines(filePath).ToList();
             }
-            catch (Exception ex)
+            int timeLineIndex = fileLines.FindIndex(line => line.Contains($"Time: {this.Time}"));
+
+            if (timeLineIndex == -1)
             {
-                Console.WriteLine($"Ошибка при записи в файл: {ex.Message}");
+                fileLines.Add($"Time: {this.Time}");
+                timeLineIndex = fileLines.Count - 1;
             }
+            fileLines.Insert(timeLineIndex + 1, $"FIO: {this.FIO}, row: {this.Row}, col: {this.Col}");
+
+            File.WriteAllLines(filePath, fileLines);
         }
     }
 }

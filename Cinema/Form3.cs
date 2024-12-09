@@ -9,6 +9,9 @@ namespace Cinema
         private Form2 parentForm;
         private Zal zal;
 
+        private string Time;
+        private string selectedMovie;
+
         public void create_seat_button(int row, int col, int point_x, int point_y, bool isOccupied)
         {
             Button seatButton = new Button
@@ -33,7 +36,7 @@ namespace Cinema
                 }
                 else
                 {
-                    Form4 form4 = new Form4(seatRow, seatCol, zal, seatButton);  
+                    Form4 form4 = new Form4(selectedMovie, Time, seatRow, seatCol, zal, seatButton);  
                     form4.Show();
                 }
             };
@@ -92,10 +95,13 @@ namespace Cinema
             }
             return null;  
         }
-        public Form3()
+        public Form3(string Time, string selectedMovie)
         {
-            InitializeComponent();
+            this.selectedMovie = selectedMovie;
+            this.Time = Time;
             zal = new Zal(13, 13);
+
+            InitializeComponent();
             create_scene();
             AddScreenLabel();
             BaseFunc.create_close_button(this, 350, 550);
