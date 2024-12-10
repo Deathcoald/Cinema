@@ -8,3 +8,15 @@ D:\c#\Cinema\Cinema\obj\Debug\Cinema.csproj.CoreCompileInputs.cache
 D:\c#\Cinema\Cinema\obj\Debug\Cinema.exe
 D:\c#\Cinema\Cinema\obj\Debug\Cinema.pdb
 D:\c#\Cinema\Cinema\obj\Debug\Cinema.Form2.resources
+D:\visual\Cinema\Cinema\bin\Debug\Cinema.exe.config
+D:\visual\Cinema\Cinema\bin\Debug\Cinema.exe
+D:\visual\Cinema\Cinema\bin\Debug\Cinema.pdb
+D:\visual\Cinema\Cinema\obj\Debug\Cinema.csproj.AssemblyReference.cache
+D:\visual\Cinema\Cinema\obj\Debug\Cinema.Form2.resources
+D:\visual\Cinema\Cinema\obj\Debug\Cinema.Form3.resources
+D:\visual\Cinema\Cinema\obj\Debug\Cinema.Properties.Resources.resources
+D:\visual\Cinema\Cinema\obj\Debug\Cinema.csproj.GenerateResource.cache
+D:\visual\Cinema\Cinema\obj\Debug\Cinema.csproj.CoreCompileInputs.cache
+D:\visual\Cinema\Cinema\obj\Debug\Cinema.exe
+D:\visual\Cinema\Cinema\obj\Debug\Cinema.pdb
+D:\c#\Cinema\Cinema\obj\Debug\Cinema.Form3.resources

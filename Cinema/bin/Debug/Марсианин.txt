@@ -1,6 +1,40 @@
+Time: 8:30 - 10:00  
+FIO: Ирина, row: 2, col: 3  
+FIO: Артем, row: 5, col: 6  
+FIO: Ксения, row: 1, col: 8  
+FIO: Владимир, row: 4, col: 2  
 Time: 10:30 - 12:00  
-FIO: Виталик, row: 4, col: 10
-FIO: Лера, row: 1, col: 6
-FIO: Даня, row: 0, col: 5
+FIO: Маша, row: 3, col: 2  
+FIO: Сергей, row: 1, col: 4  
+FIO: Николай, row: 6, col: 7  
+FIO: Лена, row: 2, col: 5  
+Time: 12:30 - 14:00  
+FIO: Петя, row: 4, col: 5  
+FIO: Виктор, row: 6, col: 7  
+FIO: Аня, row: 3, col: 1  
+FIO: Дмитрий, row: 5, col: 8  
 Time: 14:30 - 16:00  
-FIO: Денис, row: 5, col: 8
+FIO: Аня, row: 2, col: 8  
+FIO: Даша, row: 5, col: 3  
+FIO: Иван, row: 4, col: 6  
+FIO: Оля, row: 1, col: 9  
+Time: 16:30 - 18:00  
+FIO: Саня, row: 1, col: 7  
+FIO: Даня, row: 4, col: 8  
+FIO: Павел, row: 6, col: 2  
+FIO: Татьяна, row: 3, col: 9  
+Time: 18:30 - 20:00  
+FIO: Рома, row: 6, col: 4  
+FIO: Катя, row: 2, col: 6  
+FIO: Борис, row: 5, col: 1  
+FIO: Юля, row: 3, col: 5  
+Time: 20:30 - 22:00  
+FIO: Владимир, row: 3, col: 1  
+FIO: Ирина, row: 7, col: 5  
+FIO: Константин, row: 2, col: 4  
+FIO: Марина, row: 4, col: 9  
+Time: 22:30 - 00:00  
+FIO: Борис, row: 4, col: 2  
+FIO: Элла, row: 6, col: 9  
+FIO: Роман, row: 1, col: 3  
+FIO: Лариса, row: 5, col: 7  

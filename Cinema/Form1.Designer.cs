@@ -24,10 +24,10 @@
             this.Name = "Form1";
             this.Text = "Афиша";
 
-            this.createText("Добро пожаловать в кино!", 400, 100, 800, 50, 22);
-            this.createText("Марсианин", 210, 80, 430, 160, 20);
-            this.createText("Темный рыцарь", 300, 80, 860, 160, 20);
-            this.createText("Титаник", 300, 80, 1340, 160, 20);
+            BaseFunc.createText(this, "Добро пожаловать в кино!", 400, 100, 800, 50, 22);
+            BaseFunc.createText(this, "Марсианин", 210, 80, 430, 160, 20);
+            BaseFunc.createText(this, "Темный рыцарь", 300, 80, 860, 160, 20);
+            BaseFunc.createText(this, "Титаник", 300, 80, 1340, 160, 20);
 
             this.createImage("marsianin.jpg", 300, 250);
             this.createImage("darkknight.jpg", 750, 250);

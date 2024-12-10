@@ -23,19 +23,6 @@ namespace Cinema
             }
         }
 
-        public void createText(string name, int size_x, int size_y, int point_x, int point_y, int text_size)
-        {
-            Label cinema_name1 = new Label
-            {
-                Text = name,
-                Size = new System.Drawing.Size(size_x, size_y),
-                Location = new System.Drawing.Point(point_x, point_y),
-                Font = new System.Drawing.Font("Times New Roman", text_size),
-                ForeColor = System.Drawing.Color.White
-            };
-            this.Controls.Add(cinema_name1);
-        }
-
         private void createButton(string text, int size_x, int size_y, int point_x, int point_y)
         {
             Button button = new Button

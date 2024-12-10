@@ -1,26 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Cinema
 {
     public partial class Form3 : Form
     {
-<<<<<<< Updated upstream
-        public Form3()
-        {
-            InitializeComponent();
-=======
         private Form2 parentForm;
         private Zal zal;
-        private string selectedMovie;
+
         private string Time;
+        private string selectedMovie;
 
         public void create_seat_button(int row, int col, int point_x, int point_y, bool isOccupied)
         {
@@ -58,7 +48,7 @@ namespace Cinema
         void create_scene()
         {
             int start_x = 20;
-            int start_y = 20;
+            int start_y = 150;
             int padding = 30;
 
             for (int row = 0; row < zal.rows; row++)
@@ -80,7 +70,7 @@ namespace Cinema
             {
                 Text = "Экран",
                 Size = new Size(200, 30), 
-                Location = new Point(100, 570), 
+                Location = new Point(115, 10), 
                 BackColor = Color.Gray,
                 ForeColor = Color.White,
                 Font = new Font("Arial", 14, FontStyle.Bold),
@@ -105,18 +95,16 @@ namespace Cinema
             }
             return null;  
         }
-        public Form3(string time ,string selectedMovie)
+        public Form3(string Time, string selectedMovie)
         {
-            zal = new Zal(13, 13);
+            this.selectedMovie = selectedMovie;
+            this.Time = Time;
+            zal = new Zal(13, 13, $"{selectedMovie}.txt", Time);
 
             InitializeComponent();
             create_scene();
             AddScreenLabel();
             BaseFunc.create_close_button(this, 350, 550);
-
-            this.selectedMovie = selectedMovie;
-            this.Time = time;
->>>>>>> Stashed changes
         }
     }
 }

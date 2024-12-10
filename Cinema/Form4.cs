@@ -8,22 +8,26 @@ namespace Cinema
     {
         private int Row { get; set; }
         private int Col { get; set; }
-        public string MovieName;
-        public string Time;
+
         public Zal zal;
+
         private Button seatButton;
+
         private TextBox inputTextBox;
         private Button processButton;
 
-        public Form4(string movieName, string time, int row, int col, Zal zal, Button seatButton)
+        private string Time;
+        private string selectedMovie;
+
+        public Form4(string selectedMovie, string Time, int row, int col, Zal zal, Button seatButton)
         {
             Row = row;
             Col = col;
-            MovieName = movieName;
-            Time = time;
 
+            this.selectedMovie = selectedMovie;
+            this.Time = Time;
             this.zal = zal;
-            this.seatButton = seatButton;
+            this.seatButton = seatButton;  
 
             InitializeComponent();
             create_text_box();
@@ -52,15 +56,18 @@ namespace Cinema
             this.Controls.Add(processButton);
         }
 
+
         private void ProcessButton_Click(object sender, EventArgs e)
         {
             Client client = new Client(Time, inputTextBox.Text, Row, Col);
 
-            client.SaveToFile($"{MovieName}.txt");
-           
-            seatButton.BackColor = Color.Red;
+            client.SaveToFile($"{selectedMovie}.txt");
+
+            
+            seatButton.BackColor = Color.Red;  
 
             this.Close();
         }
+
     }
 }
