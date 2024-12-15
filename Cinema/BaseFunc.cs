@@ -1,4 +1,6 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace Cinema
@@ -24,6 +26,22 @@ namespace Cinema
 
             form.Controls.Add(closeButton);
         }
+        public static void LogMessage(string filePath, string message)
+        {
+            try
+            {
+                using (StreamWriter sw = new StreamWriter(filePath, true)) 
+                {
+
+                    sw.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Ошибка при записи в лог: " + ex.Message);
+            }
+        }
+
         public static void createText(Form form, string name, int size_x, int size_y, int point_x, int point_y, int text_size)
         {
             Label cinema_name1 = new Label

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Windows.Forms;
 
@@ -8,26 +10,13 @@ namespace Cinema
     public partial class Form2 : Form
     {
         private string selectedMovie;
-        private string Time;
+        private DateTime Time;
 
-        static string[] ReadFile(string filePath)
-        {
-            try
-            {
-                return File.ReadAllLines(filePath);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ошибка при чтении файла: " + ex.Message);
-                return new string[] { };
-            }
-        }
-
-        public void create_seans_button(string time, ref int point_x, ref int point_y)
+        public void create_seans_button(DateTime time, ref int point_x, ref int point_y)
         {
             Button seansButton = new Button
             {
-                Text = time,
+                Text = time.ToString("HH:mm"),
                 Size = new System.Drawing.Size(200, 50),
                 Location = new System.Drawing.Point(point_x, point_y),
                 Font = new System.Drawing.Font("Times New Roman", 18),
@@ -45,7 +34,7 @@ namespace Cinema
         }
 
 
-        private void OnSeansButtonClick(object sender, EventArgs e, string time)
+        private void OnSeansButtonClick(object sender, EventArgs e, DateTime time)
         {
             Time = time;
 
@@ -57,50 +46,44 @@ namespace Cinema
 
         private void LoadSeansTimes()
         {
-            string[] seans_time = ReadFile("timetable.txt");
+            List<DateTime> times = new List<DateTime>();
 
-            int point_x = 930;
-            int point_y = 100;
-
-            bool isMovieSection = false;
-
-            foreach (string s in seans_time)
+            foreach (string line in File.ReadLines($"{selectedMovie}_timetable.txt"))
             {
-
-                if (string.IsNullOrWhiteSpace(s))
-                {
-                    isMovieSection = false;
-                }
-
-                if (s.StartsWith(selectedMovie))
-                {
-                    isMovieSection = true;
-
-                    Label cinema_name1 = new Label
-                    {
-                        Text = s,
-                        Size = new System.Drawing.Size(300, 80),
-                        Location = new System.Drawing.Point(870, 0),
-                        Font = new System.Drawing.Font("Times New Roman", 25),
-                        ForeColor = System.Drawing.Color.White,
-
-                        TextAlign = ContentAlignment.MiddleCenter,
-                    };
-                    this.Controls.Add(cinema_name1);
-
+                if (string.IsNullOrWhiteSpace(line))
                     continue;
-                }
 
-                if (isMovieSection)
+                DateTime time = DateTime.ParseExact(line.Trim(), "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture);
+
+                times.Add(time);
+            }
+            times.Sort();
+
+            int point_x = 100;
+            int point_y = 150;
+
+            BaseFunc.createText(this, selectedMovie, 200, 50, 930, 50, 18);
+
+            DateTime nameFlag = times[0];
+            BaseFunc.createText(this, times[0].ToString("yyyy-MM-dd"), 200, 50, point_x, 100, 18);
+
+            foreach (DateTime s in times)
+            {
+                if (nameFlag.ToString("yyyy-MM-dd") == s.ToString("yyyy-MM-dd"))
+                    create_seans_button(s, ref point_x, ref point_y);
+                else
                 {
-                    string time = s;
-                    create_seans_button(time, ref point_x, ref point_y);
-                    isMovieSection = true;
+                    nameFlag = s;
+                    point_x =+ 400;
+                    point_y = 150;
+                    BaseFunc.createText(this, nameFlag.ToString("yyyy-MM-dd"), 200, 50, point_x, 100, 18);
+                    create_seans_button(s, ref point_x, ref point_y); 
                 }
             }
         }
 
-            public Form2(string movieName)
+
+        public Form2(string movieName)
         {
             selectedMovie = movieName;
 

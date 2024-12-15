@@ -1,66 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
+using System;
 
-namespace Cinema
+public class Zal
 {
-    public class Zal
+    public bool[,] MediumHall { get; private set; }
+    public static int Rows { get; private set; }
+    public static int Cols { get; private set; }
+
+    public Zal()
     {
-        public bool[,] medium_hall { get; private set; }
-        public int rows { get; set; }
-        public int cols { get; set; }
-        private string filterTime; 
+        Rows = 13;
+        Cols = 13;
+        MediumHall = new bool[Rows, Cols];
+    }
+    public void UpdateOccupiedSeats(List<Ticket> tickets)
+    {
+        
+        Array.Clear(MediumHall, 0, MediumHall.Length);
 
-        public Zal(int Rows, int Cols, string filePath, string Time)
+        foreach (var ticket in tickets)
         {
-            rows = Rows;
-            cols = Cols;
-            filterTime = Time;  
-            GenerateMatrices(filePath);
+            MediumHall[ticket.Row, ticket.Col] = true;
         }
-
-        private void GenerateMatrices(string filePath)
-        {
-            medium_hall = new bool[rows, cols];
-            FillMatrixFromFile(filePath);
-        }
-
-        private void FillMatrixFromFile(string filePath)
-        {
-            if (!File.Exists(filePath))
-            {
-                Console.WriteLine("Файл не найден.");
-                return;
-            }
-
-            var lines = File.ReadAllLines(filePath);
-            string currentTime = string.Empty;
-
-            foreach (var line in lines)
-            {
-                if (line.StartsWith("Time:"))
-                {
-                    currentTime = line;
-
-                    if (currentTime != $"Time: {filterTime}")
-                    {
-                        currentTime = string.Empty; 
-                    }
-                }
-                else if (line.StartsWith("FIO:") && currentTime == $"Time: {filterTime}")
-                {
-                    var parts = line.Split(new[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
-
-                    string fio = parts[1];
-                    int row = int.Parse(parts[3]) - 1;
-                    int col = int.Parse(parts[5]) - 1;
-
-                    if (row >= 0 && row < rows && col >= 0 && col < cols)
-                    {
-                        medium_hall[row, col] = true;  
-                    }
-                }
-            }
-        }
+    }
+    public bool IsSeatOccupied(int row, int col)
+    {
+        return MediumHall[row, col];
     }
 }

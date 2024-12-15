@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -6,10 +7,9 @@ namespace Cinema
 {
     public partial class Form3 : Form
     {
-        private Form2 parentForm;
         private Zal zal;
 
-        private string Time;
+        private DateTime Time;
         private string selectedMovie;
 
         public void create_seat_button(int row, int col, int point_x, int point_y, bool isOccupied)
@@ -44,18 +44,19 @@ namespace Cinema
             this.Controls.Add(seatButton);
         }
 
-
-        void create_scene()
+        public void create_scene(List<Ticket> tickets)
         {
             int start_x = 20;
             int start_y = 150;
             int padding = 30;
+            
+            zal.UpdateOccupiedSeats(tickets);
 
-            for (int row = 0; row < zal.rows; row++)
+            for (int row = 0; row < Zal.Rows; row++)
             {
-                for (int col = 0; col < zal.cols; col++)
+                for (int col = 0; col < Zal.Cols; col++)
                 {
-                    bool isOccupied = zal.medium_hall[row, col];
+                    bool isOccupied = zal.IsSeatOccupied(row, col);
                     create_seat_button(row, col, start_x, start_y, isOccupied);
                     start_x += padding;
                 }
@@ -64,6 +65,7 @@ namespace Cinema
                 start_x = 20;
             }
         }
+
         private void AddScreenLabel()
         {
             Label screenLabel = new Label
@@ -95,16 +97,23 @@ namespace Cinema
             }
             return null;  
         }
-        public Form3(string Time, string selectedMovie)
+        public Form3(DateTime Time, string selectedMovie)
         {
             this.selectedMovie = selectedMovie;
             this.Time = Time;
-            zal = new Zal(13, 13, $"{selectedMovie}.txt", Time);
+            zal = new Zal();
+
+            var seansList = Seans.LoadSeansFromFile();
+
+            Seans seans = Seans.FindSeans(seansList, Time, selectedMovie);
+
+            List<Ticket> tickets = seans != null ? seans.Tickets : new List<Ticket>();
 
             InitializeComponent();
-            create_scene();
+            create_scene(tickets);
             AddScreenLabel();
             BaseFunc.create_close_button(this, 350, 550);
         }
+
     }
 }
