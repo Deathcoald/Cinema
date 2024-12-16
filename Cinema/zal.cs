@@ -15,7 +15,6 @@ public class Zal
     }
     public void UpdateOccupiedSeats(List<Ticket> tickets)
     {
-        
         Array.Clear(MediumHall, 0, MediumHall.Length);
 
         foreach (var ticket in tickets)
