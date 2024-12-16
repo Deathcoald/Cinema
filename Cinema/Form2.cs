@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Cinema
@@ -46,41 +47,33 @@ namespace Cinema
 
         private void LoadSeansTimes()
         {
-            List<DateTime> times = new List<DateTime>();
-
-            foreach (string line in File.ReadLines($"{selectedMovie}_timetable.txt"))
-            {
-                if (string.IsNullOrWhiteSpace(line))
-                    continue;
-
-                DateTime time = DateTime.ParseExact(line.Trim(), "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture);
-
-                times.Add(time);
-            }
-            times.Sort();
-
-            int point_x = 100;
+            int point_x = 50;
             int point_y = 150;
+            DateTime? lastDate = null;
 
             BaseFunc.createText(this, selectedMovie, 200, 50, 930, 50, 18);
 
-            DateTime nameFlag = times[0];
-            BaseFunc.createText(this, times[0].ToString("yyyy-MM-dd"), 200, 50, point_x, 100, 18);
+            var sortedTimes = File.ReadLines($"{selectedMovie}_timetable.txt")
+                                   .Where(line => !string.IsNullOrWhiteSpace(line)) 
+                                   .Select(line => DateTime.ParseExact(line.Trim(), "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture))  
+                                   .OrderBy(time => time) 
+                                   .ToList();  
 
-            foreach (DateTime s in times)
+            foreach (DateTime time in sortedTimes)
             {
-                if (nameFlag.ToString("yyyy-MM-dd") == s.ToString("yyyy-MM-dd"))
-                    create_seans_button(s, ref point_x, ref point_y);
-                else
+                if (!lastDate.HasValue || lastDate.Value.ToString("yyyy-MM-dd") != time.ToString("yyyy-MM-dd"))
                 {
-                    nameFlag = s;
-                    point_x =+ 400;
-                    point_y = 150;
-                    BaseFunc.createText(this, nameFlag.ToString("yyyy-MM-dd"), 200, 50, point_x, 100, 18);
-                    create_seans_button(s, ref point_x, ref point_y); 
+                    lastDate = time;
+                    point_x += 200;  
+                    point_y = 150; 
+                    BaseFunc.createText(this, time.ToString("yyyy-MM-dd"), 200, 50, point_x, 100, 18);
                 }
+
+                create_seans_button(time, ref point_x, ref point_y);
             }
         }
+
+
 
 
         public Form2(string movieName)

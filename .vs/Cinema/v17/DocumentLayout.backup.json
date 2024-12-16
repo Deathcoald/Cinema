@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\c#\\Cinema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|D:\\c#\\Cinema\\cinema\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\cinema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|d:\\c#\\cinema\\cinema\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|D:\\c#\\Cinema\\cinema\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6BF28013-47FD-4895-9C5E-2C4643F0DB96}|Cinema\\Cinema.csproj|solutionrelative:cinema\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -82,8 +82,7 @@
               "RelativeToolTip": "Cinema\\Seans.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAqwCoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T13:19:49.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T13:19:49.4Z"
             },
             {
               "$type": "Document",
@@ -93,7 +92,7 @@
               "RelativeDocumentMoniker": "Cinema\\Form2.cs",
               "ToolTip": "D:\\c#\\Cinema\\Cinema\\Form2.cs*",
               "RelativeToolTip": "Cinema\\Form2.cs*",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAwE4AAABjAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAwEIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T19:42:15.356Z",
               "EditorCaption": ""
@@ -108,8 +107,7 @@
               "RelativeToolTip": "Cinema\\BaseFunc.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAawDcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T08:11:14.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T08:11:14.517Z"
             },
             {
               "$type": "Document",
@@ -120,8 +118,7 @@
               "ToolTip": "D:\\c#\\Cinema\\Cinema\\Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "RelativeToolTip": "Cinema\\Form3.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T12:32:21.473Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "WhenOpened": "2024-12-13T12:32:21.473Z"
             },
             {
               "$type": "Document",
@@ -145,8 +142,7 @@
               "RelativeToolTip": "Cinema\\Ticket.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAADwvx8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T16:12:45.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T16:12:45.49Z"
             },
             {
               "$type": "Document",
@@ -158,8 +154,7 @@
               "RelativeToolTip": "Cinema\\Form4.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:04:08.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T11:04:08.672Z"
             },
             {
               "$type": "Document",
@@ -171,8 +166,7 @@
               "RelativeToolTip": "Cinema\\Form3.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAADwv3cAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T20:13:56.353Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:13:56.353Z"
             },
             {
               "$type": "Document",
@@ -184,8 +178,7 @@
               "RelativeToolTip": "Cinema\\Form1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T11:45:55.09Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T11:45:55.09Z"
             },
             {
               "$type": "Document",
@@ -197,8 +190,7 @@
               "RelativeToolTip": "Cinema\\Form2.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:11:55.375Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T16:11:55.375Z"
             },
             {
               "$type": "Document",
@@ -210,8 +202,7 @@
               "RelativeToolTip": "Cinema\\Cinema.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T12:17:45.348Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-14T12:17:45.348Z"
             },
             {
               "$type": "Document",
@@ -223,8 +214,7 @@
               "RelativeToolTip": "Cinema\\Form4.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAAADcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T08:18:46.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T08:18:46.31Z"
             },
             {
               "$type": "Document",
@@ -259,8 +249,7 @@
               "RelativeToolTip": "Cinema\\Form3.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T20:14:01.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-05T20:14:01.712Z"
             }
           ]
         }
